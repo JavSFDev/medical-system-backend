@@ -1,0 +1,498 @@
+{
+	"info": {
+		"_postman_id": "e7e424e8-fdf1-4924-a59b-64689ab6e730",
+		"name": "ClinicaProyecto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17711469",
+		"_collection_link": "https://dark-equinox-befer.postman.co/workspace/Team-BYF-Workspace~03160758-cb66-443d-8781-db6e728a4a0e/collection/25607962-e7e424e8-fdf1-4924-a59b-64689ab6e730?action=share&creator=17711469&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Enfermedad",
+			"item": [
+				{
+					"name": "Listar Enfermedades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:81/clinica/enfermedad",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"enfermedad"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Enfermedad",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Parkinson\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:81/clinica/enfermedad/",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"enfermedad",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar enfermedad",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idEnfermedad\":\"2\",\r\n    \"nombre\": \"HIV\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:81/clinica/enfermedad/",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"enfermedad",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medicamento",
+			"item": [
+				{
+					"name": "Listar Medicamentos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:81/clinica/medicamento",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"medicamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear medicamento",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Amitriptilina\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:81/clinica/medicamento/",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"medicamento",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar medicamento",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMedicamento\":\"7\",\r\n    \"nombre\": \"Ritalin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:81/clinica/medicamento/",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"medicamento",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Alergia",
+			"item": [
+				{
+					"name": "ListarAlergias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:81/clinica/alergia/",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"alergia",
+								""
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear alergia",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"postman3\",\r\n    \"idCategoria\": \"3\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:81/clinica/alergia/",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"alergia",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar alergia",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idAlergia\":\"6\",\r\n    \"nombre\": \"actualizada\",\r\n    \"idCategoria\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:81/clinica/alergia/",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"alergia",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CategoriaAlerg",
+			"item": [
+				{
+					"name": "Listar Categorias de Alegias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:81/clinica/categoria",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"categoria"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cita",
+			"item": [
+				{
+					"name": "Crear Cita",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMedico\": \"2\",\r\n    \"fecha\": \"2023-05-02\",\r\n    \"hora\": \"13:00:00\",\r\n    \"estado\": \"Disponible\"\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:81/clinica/cita",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinica",
+								"cita"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Administrador",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"cedula\":\"702020058\",\r\n    \"name\":\"admin\",\r\n    \"apellido1\":\"adminA1\",\r\n    \"apellido2\":\"adminA2\",\r\n    \"email\":\"admin@admin.com\",\r\n    \"password\": \"123456\",\r\n    \"sexo\": \"Masculino\",\r\n    \"rol_id\":1\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:81/clinic2/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "81",
+							"path": [
+								"clinic2",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"ye@outlook.com\",\r\n    \"password\": \"123455\"\r\n}\r\n\r\n//$email = 'yenkgr08@outlook.co'; public $password = '123456' })",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:81/clinic2/user/login/",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clinic2",
+						"user",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":15,\r\n    \"cedula\":\"7020200589\",\r\n    \"name\":\"Trixzz\",\r\n    \"apellido1\":\"Dinclher\",\r\n    \"apellido2\":\"Ezkuanchy\",\r\n    \"email\":\"success98@prueba.com\",\r\n    \"password\": \"123456\",\r\n    \"sexo\": \"Masculino\",\r\n    \"rol_id\":1\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:81/clinic2/user/update/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clinic2",
+						"user",
+						"update",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFormUser",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:81/clinic2/user/get/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clinic2",
+						"user",
+						"get",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFormConsulta",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:81/clinic2/consulta/getMed/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clinic2",
+						"consulta",
+						"getMed",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "consultaCreate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idMedico\":\"34\",\r\n    \"idEspecialidad\": \"3\",\r\n    \"ubicacion\": \"Guadalupe\",\r\n    \"precio\":\"12800\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:81/clinic2/consulta",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"clinic2",
+						"consulta"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
